@@ -37,7 +37,7 @@ You can check the `preview` folder for images of the widgets!
 
 
 ## Example usage
-Check Wiki page for example usage and arguments
+Check [Wiki Page](https://github.com/rudymohammadbali/ctk_components/wiki) for example usage and arguments
 
 ## Support
 
