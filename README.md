@@ -1,5 +1,5 @@
-<h1 align="center">CTk Widgets</h1>
-CTk Widgets is a collection of widgets and utilities designed as extensions or add-ons for `customtkinter (ctk)`. 
+<h1 align="center">CTk Components</h1>
+CTk Components is a collection of widgets and utilities designed as extensions or add-ons for `customtkinter (ctk)`. 
 
 
 ## Widgets
