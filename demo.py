@@ -12,8 +12,8 @@ def alert():
 
 
 def banner():
-    my_banner = CTkBanner(master=preview_frame, state="info", title="Title", btn1="Action 1", btn2="Action 2",
-                          side="right_bottom")
+    my_banner = CTkBanner(master=preview_frame, state="info", title="Title",
+                          btn1="Action 1", btn2="Action 2", side="right_bottom")
     # answer = my_banner.get()  # get answer
     # print(answer)
 
@@ -73,7 +73,7 @@ def ctk_popup():
     # label1.grid(padx=20, pady=20, sticky="nsew")
     label1.pack()
 
-    popup_menu = PopupMenu(master=preview_frame, width=250, height=270, title="Title", corner_radius=8, border_width=0)
+    popup_menu = CTkPopupMenu(master=preview_frame, width=250, height=270, title="Title", corner_radius=8, border_width=0)
     preview_frame.bind("<Button-3>", lambda event: do_popup(event, popup_menu), add="+")
 
     btn1 = ctk.CTkButton(popup_menu.frame, text="Option 1", command=lambda: print("Hello"), **BTN_OPTION)
@@ -93,9 +93,8 @@ def ctk_popup():
 
 
 def progress_popup():
-    my_progress = CTkProgressPopup(master=preview_frame, title="Background Tasks", label="Label...",
-                                   message="Do something...",
-                                   side="right_bottom")
+    my_progress = CTkProgressPopup(master=preview_frame, title="Background Tasks",
+                                   label="Label...", message="Do something...", side="right_bottom")
     # my_progress.update_label("New Label...") # Updates label
     # my_progress.update_message("New Message...") # Updates message
     # my_progress.update_progress(54) # Update progress bar (0-100)
@@ -114,24 +113,22 @@ def treeview():
             'name': 'Item 3',
             'children': ['Subitem 3']
         }
-    ]
-    tree_view = CTkTreeView(master=preview_frame, items=data)
+    ]       
+    tree_view = CTkTreeview(master=preview_frame, items=data)
     tree_view.pack(pady=20, padx=20, fill="both", expand=True)
 
 
-WIDGETS = {
-    "CTkAlert": alert,
-    "CTkBanner": banner,
-    "CTkNotification": notification,
-    "CTkCard": card,
-    "CTkCarousel": carousel,
-    "CTkInput1": ctk_input_1,
-    "CTkInput2": ctk_input_2,
-    "CTkLoader": loader,
-    "CTkPopupMenu": ctk_popup,
-    "CTkProgressPopup": progress_popup,
-    "CTkTreeview": treeview
-}
+WIDGETS = {"CTkAlert": alert,
+           "CTkBanner": banner,
+           "CTkNotification": notification,
+           "CTkCard": card,
+           "CTkCarousel": carousel,
+           "CTkInput1": ctk_input_1,
+           "CTkInput2": ctk_input_2,
+           "CTkLoader": loader,
+           "CTkPopupMenu": ctk_popup,
+           "CTkProgressPopup": progress_popup,
+           "CTkTreeview": treeview}
 
 
 def toggle_widgets(widget):
@@ -149,8 +146,8 @@ if __name__ == "__main__":
     app.grid_columnconfigure(0, weight=1)
     app.grid_rowconfigure(1, weight=1)
 
-    options = ["CTkAlert", "CTkBanner", "CTkNotification", "CTkCard", "CTkCarousel", "CTkInput1", "CTkInput2",
-               "CTkLoader",
+    options = ["CTkAlert", "CTkBanner", "CTkNotification", "CTkCard",
+               "CTkCarousel", "CTkInput1", "CTkInput2", "CTkLoader",
                "CTkPopupMenu", "CTkProgressPopup", "CTkTreeview"]
 
     frame = ctk.CTkFrame(app, fg_color="transparent")
