@@ -30,13 +30,3 @@ https://github.com/rudymohammadbali/ctk_components/assets/63475761/ed48154a-9225
 
 ## Example usage
 Check [Wiki Page](https://github.com/rudymohammadbali/ctk_components/wiki) for example usage and arguments
-
-## Support
-
-<p align="left">If you'd like to support my ongoing efforts in sharing fantastic open-source projects, you can contribute by making a donation via PayPal.</p>
-
-<div align="center">
-  <a href="https://www.paypal.com/paypalme/iamironman0" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=PayPal&logo=paypal&label=&color=00457C&logoColor=white&labelColor=&style=flat" height="40" alt="paypal logo"  />
-  </a>
-</div>
